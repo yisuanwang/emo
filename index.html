@@ -54,7 +54,10 @@
             var randomIndex = Math.floor(Math.random() * images.length);
             var selectedImage = images[randomIndex];
             
-            document.getElementById('randomImageBackground').style.backgroundImage = 'url(' + selectedImage + ')';
+            // 注意这里路径周围的引号
+            document.getElementById('randomImageBackground').style.backgroundImage = 'url("' + selectedImage + '")';
+    
+
         });
 
     </script>
